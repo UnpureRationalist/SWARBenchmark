@@ -2,6 +2,7 @@
 
 Test results:
 ```shell
+$ ./swarBenchmark
 2024-06-30T01:00:01+08:00
 Running ./swarBenchmark
 Run on (8 X 2500 MHz CPU s)
