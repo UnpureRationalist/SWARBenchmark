@@ -37,7 +37,7 @@ long long openmpBasicPopCount(const unsigned char *s, long count) {
 #pragma omp parallel for reduction(+ : bits) num_threads(2)
   for (long i = 0; i < count; ++i) {
     for (int j = 0; j < 8; ++j) {
-      bits += (s[i] & (1 << j)) > 0;
+      bits += s[i] & (1 << j);
     }
   }
   return bits;
